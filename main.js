@@ -9,6 +9,7 @@ const toggleIcon = document.querySelector('#toggle i');
 currentDate.textContent = `${new Date().toLocaleDateString()}`;
 
 // set clock
+setClock();
 setInterval(setClock, 1000);
 
 // check prefered color scheme
