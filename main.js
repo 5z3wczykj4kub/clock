@@ -26,9 +26,9 @@ toggleIcon.addEventListener('click', () =>
 function setClock() {
   const date = new Date();
 
-  const secondsHandDeg = (date.getSeconds() * 6) % 360;
-  const minutesHandDeg = (date.getMinutes() * 6) % 360;
-  const hoursHandDeg = (date.getHours() * 30) % 360;
+  const secondsHandDeg = date.getSeconds() * 6;
+  const minutesHandDeg = date.getMinutes() * 6;
+  const hoursHandDeg = date.getHours() * 30;
 
   secondsHand.style.transform = `rotate(${secondsHandDeg}deg)`;
   minutesHand.style.transform = `rotate(${minutesHandDeg}deg)`;
