@@ -30,7 +30,7 @@ body.light-mode {
   --font: #000;
 }
 
-body.light-mode #toggle button {
+body.light-mode #toggle i {
   transform: rotate(180deg);
 }
 
@@ -129,7 +129,7 @@ body.light-mode #toggle button {
   font-size: 1.4rem;
 }
 
-#toggle button {
+#toggle i {
   display: inline-block;
   vertical-align: middle;
   background-color: transparent;

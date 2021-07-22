@@ -3,7 +3,7 @@ const minutesHand = document.querySelector('#minutes-hand');
 const hoursHand = document.querySelector('#hours-hand');
 const currentTime = document.querySelector('#current-time');
 const currentDate = document.querySelector('#current-date');
-const toggleButton = document.querySelector('#toggle button');
+const toggleIcon = document.querySelector('#toggle i');
 
 // initial date
 currentDate.textContent = `${new Date().toLocaleDateString()}`;
@@ -18,7 +18,7 @@ const isPreferedColorSchemeDark = window.matchMedia(
 if (!isPreferedColorSchemeDark) document.body.classList.add('light-mode');
 
 // toggle light mode
-toggleButton.addEventListener('click', () =>
+toggleIcon.addEventListener('click', () =>
   document.body.classList.toggle('light-mode')
 );
 
